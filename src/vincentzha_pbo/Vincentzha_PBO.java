@@ -2,8 +2,8 @@ package vincentzha_pbo;
 import java.util.Scanner;
 public class Vincentzha_PBO {
     public static void main(String[] args) {
-        
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Masukkan bilangan pertama: ");
         double bilanganPertama = scanner.nextDouble();
 
@@ -16,7 +16,7 @@ public class Vincentzha_PBO {
         System.out.println("3. Perkalian");
         System.out.println("4. Pembagian");
 
-        System.out.print("Masukkan pilihan (1/2/3/4): ");
+        System.out.print("Masukkan Pilihan (1/2/3/4): ");
         int pilihan = scanner.nextInt();
 
         double hasil = 0.0;
@@ -25,7 +25,7 @@ public class Vincentzha_PBO {
                 hasil = bilanganPertama + bilanganKedua;
                 System.out.println(bilanganPertama + " + " + bilanganKedua + " = " + hasil);
                 break;
-            case 2: 
+            case 2:
                 hasil = bilanganPertama - bilanganKedua;
                 System.out.println(bilanganPertama + " - " + bilanganKedua + " = " + hasil);
                 break;
@@ -33,7 +33,18 @@ public class Vincentzha_PBO {
                 hasil = bilanganPertama * bilanganKedua;
                 System.out.println(bilanganPertama + " * " + bilanganKedua + " = " + hasil);
                 break;
+            case 4:
+                if (bilanganKedua != 0) {
+                    hasil = bilanganPertama / bilanganKedua;
+                    System.out.println(bilanganPertama + " / " + bilanganKedua + " = " + hasil);
+                } else {
+                    System.out.println("Tidak bisa melakukan pembagian dengan nol.");
+                }
+                break;
+            default:
+                System.out.println("Pilihan tidak valid.");
         }
-          
+
+        scanner.close();
     }
 }
