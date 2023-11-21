@@ -31,35 +31,23 @@ public class Ahmad_zakyUUK_PBO {
             
             switch (pilihan) {
                 case 1:
-                    System.out.println("perjumlahan");
-                    System.out.println(angka1);
-                    System.out.println(angka2);
                     hasil = angka1 + angka2;
-                    System.out.println("hasil perjumlahan  :  " + hasil);
+                    System.out.println(angka1 +" + "+angka2 + " = "  + hasil);
                     break;
                     
                   case 2:
-                    System.out.println("pengurangan");
-                    System.out.println(angka1);
-                    System.out.println(angka2);
                     hasil = angka1 - angka2;
-                    System.out.println("hasil perjumlahan  :  " + hasil);
+                    System.out.println(angka1 +" - "+angka2 + " = " + hasil);
                     break;
                     
                   case 3:
-                    System.out.println("perkalian");
-                    System.out.println(angka1);
-                    System.out.println(angka2);
                     hasil = angka1 * angka2;
-                    System.out.println("hasil perjumlahan  :  " + hasil);
+                   System.out.println(angka1 +" * "+angka2 + " = " + hasil);
                     break;
                     
                    case 4:
-                    System.out.println("pembagian");
-                    System.out.println(angka1);
-                    System.out.println(angka2);
                     hasil = angka1 / angka2;
-                    System.out.println("hasil perjumlahan  :  " + hasil);
+                    System.out.println(angka1 +" / "+angka2 + " = " + hasil);
                     break;
                     
                      case 5:
